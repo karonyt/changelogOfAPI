@@ -1,0 +1,43 @@
+# 1.20.20 changelogs
+- beta  
+**@minecrft/server**: `1.6.0-beta` ← new!  
+@minecraft/server-ui: `1.2.0-beta`
+
+- stable  
+@minecraft/server: `1.5.0`  
+@minecraft/server-ui: `1.1.0`
+
+- npm  
+[@minecraft/server](https://www.npmjs.com/package/@minecraft/server?activeTab=versions)
+[@minecraft/server-ui](https://www.npmjs.com/package/@minecraft/server-ui?activeTab=versions)
+
+## 1.20.30.20
+- **MinecraftItemTypes削除**
+- CompoundBlockVolumeコンテナを内部基準点に対する相対座標を使用するよう変更
+- Editor API全体でSelectionの代わりにCompoundBlockVolumeの使用方法を統一された
+- setLore()が特定の文字の長さを間違えてカウントする問題が治った
+- Entityを削除するremove()が追加された
+- MolangVariableMap系
+  - setFloat関数を追加しました。
+  - setColorRBG、setColorRGBA、setSpeedAndDirection、setVector3の戻り値型をvoidに変更しました。
+  - spawnParticleのMolangVariableMapプロパティをオプションに変更しました
+  ```js
+  spawnParticle(effectName: string, location: Vector3, molangVariables?: MolangVariableMap): void
+  ```
+  - 名称変更 Colorinterface → RGBA
+  - 新たなインターフェース『RGB』が追加された 
+  
+## 1.20.30.21
+- **EntityEquipmentInventoryComponent → EntityEquippableComponent**
+【1.5.0(安定版)に追加】
+- ProjectileHit系のイベント
+- spawnParticle()
+- setColorRGB()
+- setColorRGBA()
+- setFloat()
+- setSpeedAndDirection()
+- setVector3()
+- triggerEvent()
+- RGB
+  - RGB
+  - RGBA
