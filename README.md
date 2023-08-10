@@ -1,0 +1,2 @@
+# changelogOfAPI
+ScriptAPIのチェンジログ
